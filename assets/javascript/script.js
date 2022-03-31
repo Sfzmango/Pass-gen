@@ -2,13 +2,14 @@
 // Query button press 
 var generateBtn = document.querySelector("#generate");
 var passwordLength;
+
 var confirmArr = [false, false, false, false];
 var lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "0123456789";
 var specialCharacters = "\"\\!#$%&'()*+,-./:;<=>?@[]^_`{|}~";
+var confirmedCharacters;
 
-console.log(specialCharacters);
 
 //records user input for length of password and declines if it is not a number between 8-128
 function userInputLength() {
@@ -24,15 +25,44 @@ function userInputLength() {
   console.log(passwordLength);
 }
 
+//confirms with user if they would like to add lowercase, uppercase, numbers, and/or special characters.
 function userInputConfirm() {
-  confirmArr[0] = window.confirm("Would you like to include lowercase letters?")
-  confirmArr[1] = window.confirm("Would you like to include uppercase letters?")
-  confirmArr[2] = window.confirm("Would you like to include numbers?")
-  confirmArr[3] = window.confirm("Would you like to include special characters?")
+  confirmArr[0] = window.confirm("Would you like to include lowercase letters?");
+  confirmArr[1] = window.confirm("Would you like to include uppercase letters?");
+  confirmArr[2] = window.confirm("Would you like to include numbers?");
+  confirmArr[3] = window.confirm("Would you like to include special characters?");
 
   console.log(confirmArr);
 
-}
+};
+
+//turns all confirmed options into a single string.
+var confirmFilteredArr;
+function confirmedChar() {
+  for (let i = 0; i < 4; i++) {
+    if (confirmArr[0] == true) {
+      confirmArr[0] = lowercaseLetters;
+    }
+    if (confirmArr[1] == true) {
+      confirmArr[1] = uppercaseLetters;
+    }
+    if (confirmArr[2] == true) {
+      confirmArr[2] = numbers;
+    }
+    if (confirmArr[3] == true) {
+      confirmArr[3] = specialCharacters;
+    }
+    var filteredArr = filterArr(confirmArr);
+    confirmedCharacters = filteredArr.join("");
+    function filterArr(arr) {
+      return arr.filter(Boolean);
+    };
+
+    console.log(confirmedCharacters);
+
+    return confirmedCharacters;
+  };
+};
 
 // Write password to the #password input
 function writePassword() {
@@ -41,7 +71,7 @@ function writePassword() {
 
   userInputConfirm();
 
-
+  confirmedChar()
 
 
   // function generatePassword() {
