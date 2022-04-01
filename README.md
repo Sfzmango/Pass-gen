@@ -1,92 +1,67 @@
-# 03 JavaScript: Password Generator
+# Pass-Gen
 
-## Your Task
+## <ins> Table of Contents: </ins>
 
-This week’s homework requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
+- [Description of the Task](#description-of-the-task)
+- [Description of the Page](#description-of-the-page)
+- [Remarks](#remarks)
+- [Thought Process](#thought-process)
+- [Learning Points](#learning-points)
+- [Technologies and Programs Used](#technologies-and-programs-used)
+- [Installation](#installation)
+- [Site Demonstration](#site-demonstration)
+- [Credits](#credits)
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
 
-## User Story
+## <ins> Description of the Task: </ins>
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+The task that was given was to create a Javascript program to generate a random password based on certain criterias set by prompts and confirms that the user has to input without encountering any issues.  
 
-## Acceptance Criteria
+## <ins> Description of the Page: </ins>
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN asked for character types to include in the password
-THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+This page is constructed with HTML, CSS, and Javascript and it features a Javascript program that upon pressing the "Generate Password" button, the user will be asked to input a prompt for inputting the desired random password's length and if they would like certain characters included or excluded. Who would this program be suited for? This program is available for interested parties who are looking for boosting their security measures by having an extremely intricate password that is almost impossible to hack. 
 
-## Mock-Up
+## <ins> Remarks: </ins>
 
-The following image shows the web application's appearance and functionality:
+- The page name is meant to be a pun for keygen.
+- I have added numerous comments along the Javascript files to annotate what a specific part of the code does.
 
-![The Password Generator application displays a red button to "Generate Password".](../03-javascript-homework-demo.png)
+## <ins> Thought Process: </ins>
 
-## Grading Requirements
+1. Create a prompt that checks if the user inputs a value within a set parameters and records that value.
+2. Create a set of confirm requests that ask if the user would like to have specific characters included inthe randomly generated password.
+3. Create a function that would tie together the confirmed boolean inputs for desired characters and the strings for the respective desired characters.
+4. Filter out any falsy boolean values in the array and combine the array into one big string.
+5. Create a function to randomly generate a password using the big string array.
+6. Create a function to organize all the functions together into one linear function and log out the password on the webpage.
+7. Debug any possible errors and reset the variable that is used to display the randomly generated password so it can be used multiple times without having to reset the webpage.
 
-This homework is graded based on the following criteria: 
+## <ins> Learning Points: </ins>
 
-### Technical Acceptance Criteria: 40%
+- Learned the fundamentals of Javascript.
+- Learned how Javascript ties together with HTML and CSS to create a dynamic webpage.
+- Learned to break required criterias into small functions to easily understand and work step by step for the code.
+- Learned to organize and consolidate code to easily be modular.
+- Learned how to read errors and debug in the Javascript code using methods such as ***console.log().***
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+## <ins> Technologies and Programs Used: </ins>
 
-  * The homework should not produce any errors in the console when you inspect it using Chrome DevTools.
+- HTML
+- CSS
+- Javascript
+- VS Code
+- Git/Github
+- Chrome Web Developer Tools
 
-### Deployment: 32%
+## <ins> Installation: </ins>
 
-* Application deployed at live URL.
+Installation is not required for this for it is a mainly a javascript program that can be run right from the website.
 
-* Application loads with no errors.
+## <ins> Site Demonstration: </ins>
 
-* Application GitHub URL submitted.
+![Site Demonstration](./assets/images/site-demonstration.gif)
 
-* GitHub repository that contains application code.
+## <ins> Credits and License: </ins>
 
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+- [Pass-gen Github Deployed Website](https://sfzmango.github.io/Pass-gen/)
+- [Maung Htike](https://github.com/Sfzmango)
