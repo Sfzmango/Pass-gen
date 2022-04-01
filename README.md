@@ -55,7 +55,7 @@ This page is constructed with HTML, CSS, and Javascript and it features a Javasc
 
 ## <ins> Installation: </ins>
 
-Installation is not required for this for it is a mainly a javascript program that can be run right from the website.
+Installation is not required for this for it is a mainly a Javascript program that can be run right from the website.
 
 ## <ins> Site Demonstration: </ins>
 
