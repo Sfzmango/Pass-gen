@@ -2,15 +2,15 @@
 
 ## <ins> Table of Contents: </ins>
 
-- [Description of the Task](#description-of-the-task)
-- [Description of the Page](#description-of-the-page)
-- [Remarks](#remarks)
-- [Thought Process](#thought-process)
-- [Learning Points](#learning-points)
-- [Technologies and Programs Used](#technologies-and-programs-used)
-- [Installation](#installation)
-- [Site Demonstration](#site-demonstration)
-- [Credits](#credits)
+- [Description of the Task](#-description-of-the-task-)
+- [Description of the Page](#-description-of-the-page-)
+- [Remarks](#-remarks-)
+- [Thought Process](#-thought-process-)
+- [Learning Points](#-learning-points-)
+- [Technologies and Programs Used](#-technologies-and-programs-used-)
+- [Installation](#-installation-)
+- [Site Demonstration](#-site-demonstration-)
+- [Credits](#-credits-)
 
 
 ## <ins> Description of the Task: </ins>
